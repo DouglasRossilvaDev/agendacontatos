@@ -1,0 +1,12 @@
+﻿select 
+	c.IDCONTATO,
+	c.NOME,
+	c.EMAIL,
+	c.TELEFONE,
+	c.DATANASCIMENTO,
+	u.NOME as NOMEUSUARIO,
+	u.EMAIL as EMAILUSUARIO
+from CONTATO c
+inner join USUARIO u
+on u.IDUSUARIO = c.IDUSUARIO
+
